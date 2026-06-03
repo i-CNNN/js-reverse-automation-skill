@@ -63,7 +63,7 @@ python3 scripts/manage_services.py --service flask --analysis analysis_result.js
 ```
 
 ### 3. 在浏览器中注入 JSRPC
-在 chrome-devtools-mcp 中：
+在 cloakbrowser-mcp 中：
 - 刷新目标页面
 - 注入 Hlclient（`scripts/JsEnv_Dev.js`）
 - 注入 `generated/jsrpc_inject.js` 完整内容

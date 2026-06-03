@@ -1,6 +1,6 @@
 ---
 name: js-reverse-automation
-description: 通过 chrome-devtools-mcp 连接真实浏览器，跟踪 sign/enc/token 的生成链路，识别运行时入口函数与依赖，生成 JSRPC 注入代码、Flask 代理代码和 Burp autoDecoder 对接文档。
+description: 通过 cloakbrowser-mcp 连接真实浏览器，跟踪 sign/enc/token 的生成链路，识别运行时入口函数与依赖，生成 JSRPC 注入代码、Flask 代理代码和 Burp autoDecoder 对接文档。
 ---
 
 # JS 逆向自动化 Skill
@@ -24,7 +24,7 @@ Optional Fetch Example: fetch("https://xxx/Login/CheckLogin", {...})
 ## 能力边界
 - **能做**：页面导航、evaluate_script、initScript 预注入、网络请求读取、console 读取、快照/截图、Hook fetch/XHR/crypto.subtle/JSON.stringify、Webpack module cache 捕获、早期 Hook 安装（initScript）、导航后 trace 延续
 - **不能做**：真实 JS 断点(paused frame)、闭包未导出函数、WASM 未导出内部函数、Service Worker 内部闭包、ES module import 拦截、VMP 静态还原、CSP WebSocket 绕过、跨域 iframe 内部函数访问、VM 保护 JS 的直接 Hook
-- 只用 chrome-devtools-mcp，不引入 Playwright/Camoufox/mitmproxy
+- 只用 cloakbrowser-mcp，不引入 Playwright/Camoufox/mitmproxy
 
 ## 阶段流程
 

@@ -1,6 +1,6 @@
 # Capability Boundaries
 
-This document defines what the js-reverse-automation skill can, partially can, and cannot do using chrome-devtools-mcp + JSRPC.
+This document defines what the js-reverse-automation skill can, partially can, and cannot do using cloakbrowser-mcp + JSRPC.
 
 ## Can Do (Stable)
 
@@ -39,7 +39,7 @@ This document defines what the js-reverse-automation skill can, partially can, a
 
 | Capability | Reason |
 |---|---|
-| Real JS debugger breakpoint with paused call frame | chrome-devtools-mcp lacks `Debugger.setBreakpoint` / `Debugger.resume` / `callFrames` |
+| Real JS debugger breakpoint with paused call frame | cloakbrowser-mcp lacks `Debugger.setBreakpoint` / `Debugger.resume` / `callFrames` |
 | Read closure-scoped variables | No scope chain access; can only observe what flows through window/exports/hooks |
 | Call unexported WASM internal functions | WASM internals are not accessible from JS context |
 | Access Service Worker internal closures | SW runs in separate thread; page JS cannot access SW scope |

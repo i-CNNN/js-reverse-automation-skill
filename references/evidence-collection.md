@@ -19,7 +19,7 @@ This document consolidates all evidence collection methods for the js-reverse-au
 
 ### Recommended Flow
 1. Open the target page, complete necessary interactions, ensure the request is actually sent.
-2. Use chrome-devtools-mcp network request list to filter candidate requests.
+2. Use cloakbrowser-mcp network request list to filter candidate requests.
 3. Read details for each candidate request, confirm the target parameter location and request body shape.
 4. If there are many similar requests, narrow down by:
    - Whether the target parameter appears

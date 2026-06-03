@@ -139,7 +139,7 @@ function arrayBufferToHex(buffer) {
 ### Limitations
 - `CryptoKey` objects are not transferable outside the browser context. The JSRPC handler must run in the same page context where the key was imported.
 - If the key is generated via `crypto.subtle.generateKey` with `extractable: false`, it cannot be exported. The JSRPC handler must call `sign/encrypt` directly with the in-page key reference.
-- `chrome-devtools-mcp` cannot intercept the internal crypto operations; it can only observe the inputs and outputs via soft hooks.
+- `cloakbrowser-mcp` cannot intercept the internal crypto operations; it can only observe the inputs and outputs via soft hooks.
 
 ---
 
@@ -206,7 +206,7 @@ WebAssembly.instantiate = function(bytes, imports) {
 
 ### Limitations
 - **Cannot call unexported WASM internal functions.** If the crypto logic is inside the WASM module but not exported, there is no way to invoke it from JS context. Mark as `strategy=unsupported` with `unsupported_reason: "WASM internal function not exported"`.
-- **Cannot read WASM memory directly from `chrome-devtools-mcp`.** Memory inspection requires `Debugger.getWasmBytecode` which is not available.
+- **Cannot read WASM memory directly from `cloakbrowser-mcp`.** Memory inspection requires `Debugger.getWasmBytecode` which is not available.
 - **Cannot reverse WASM bytecode.** Static analysis of compiled WASM is out of scope.
 - If the WASM module is obfuscated, the exported function interface is still usable, but understanding internal logic is not possible.
 
@@ -326,7 +326,7 @@ These are stored in `window.__JSRA_MODULES__.globalExports`.
 
 ### Limitations
 - ES modules use native `import/export` -- no global `require`
-- **Cannot intercept native ES module resolution.** The browser's module loader is internal; there is no hook point for `import` resolution. `chrome-devtools-mcp` cannot observe or modify module loading.
+- **Cannot intercept native ES module resolution.** The browser's module loader is internal; there is no hook point for `import` resolution. `cloakbrowser-mcp` cannot observe or modify module loading.
 - **Dynamic imports.** `import()` returns a Promise with the module namespace. The probe can observe the network request for the module file but cannot capture the module's exports unless they are also exposed globally.
 - **Import maps.** Vite uses import maps (`<script type="importmap">`) for bare specifier resolution. These are visible in the DOM but do not provide runtime access to module internals.
 - **SSR (Server-Side Rendering).** If the crypto logic runs on the server (e.g., Next.js SSR), it is not accessible from the browser context.

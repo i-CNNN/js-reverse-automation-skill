@@ -25,7 +25,7 @@
 </div>
 
 <p align="center">
-  <strong>结合chrome-devtools-mcp的能力并加上Skill的规范，实现JSRPC+Flask+autoDecoder方案的前端JS逆向自动化分析，提升JS逆向的效率</strong>
+  <strong>结合cloakbrowser-mcp的能力并加上Skill的规范，实现JSRPC+Flask+autoDecoder方案的前端JS逆向自动化分析，提升JS逆向的效率</strong>
 </p>
 
 
@@ -33,7 +33,7 @@
 
 - 登录参数加密（RSA/AES/SM2/SM4/MD5/自定义编码）
 - 数据爬取时响应内容加密
-- 请求签名（sign/token/enc）
+- 请求签名（sign/token/enc/cookie）
 - 需要将js逆向逻辑封装为可复用的代码
 - 需要与 Burp 配合进行抓包、改包
 
@@ -107,11 +107,11 @@ js-reverse-automation/
 
 ```bash
 # Claude Code
-claude mcp add chrome-devtools -- npx -y chrome-devtools-mcp@latest
+claude mcp add npx -y cloakbrowser-mcp -- npx -y cloakbrowser-mcp@latest
 # Codex
-codex mcp add chrome-devtools -- npx -y chrome-devtools-mcp@latest
+codex mcp add npx -y cloakbrowser-mcp -- npx -y cloakbrowser-mcp@latest
 # Gemini
-gemini mcp add chrome-devtools npx -y chrome-devtools-mcp@latest
+gemini mcp add npx -y cloakbrowser-mcp npx -y cloakbrowser-mcp@latest
 ```
 2. 将 `js-reverse-automation` 目录放入 Skill 目录，然后输入：
 
@@ -146,7 +146,7 @@ Optional Fetch Example: fetch("https://xxx.com/api/login", {"body":"...","method
 ## 引用工具
 - JsRpc：https://github.com/jxhczhl/JsRpc 
 - autoDecoder：https://github.com/f0ng/autoDecoder 
-- chrome-devtools-mcp：https://github.com/ChromeDevTools/chrome-devtools-mcp/ 
+- cloakbrowser-mcp：https://github.com/swimmwatch/cloakbrowser-mcp 
 
 ## 更新日志
 ### v1版本更新记录

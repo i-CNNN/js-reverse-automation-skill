@@ -2,7 +2,7 @@
 
 This document consolidates all anti-debug, anti-detection, and environment verification patterns from the six individual antidebug rule files. Each section preserves detection signatures, patch code, evidence requirements, and risk warnings.
 
-**General Principle:** Verify before patch. Use the minimal patch. Record the impact. Reference `capability-boundaries.md` for what chrome-devtools-mcp can and cannot do.
+**General Principle:** Verify before patch. Use the minimal patch. Record the impact. Reference `capability-boundaries.md` for what cloakbrowser-mcp can and cannot do.
 
 **Verification Order (from anti-detection-verification.md):**
 1. Record the original phenomenon without patch.

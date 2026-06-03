@@ -28,7 +28,7 @@ Phase 0 的输入会被规范化为如下 JSON 结构：
 {
   "browser": {
     "user_agent": "Mozilla/5.0 ...",
-    "connected_via": "chrome-devtools-mcp",
+    "connected_via": "cloakbrowser-mcp",
     "tab_url": "https://example.com/login/index"
   },
   "request_replay": {

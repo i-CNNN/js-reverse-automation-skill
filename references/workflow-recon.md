@@ -79,7 +79,7 @@
 - 输出
   - `artifacts/phase1_trace.json`
 - 成功条件
-  - chrome-devtools-mcp 成功附着到真实浏览器标签页。
+  - cloakbrowser-mcp 成功附着到真实浏览器标签页。
   - 目标页面成功加载。
   - 成功复现目标请求链路，或将 fetch 示例映射到真实请求。
   - 已通过网络证据锁定至少一个目标请求，并确认参数落点。
