@@ -1,24 +1,24 @@
-<h1 align="center">js-reverse-automation--skill </h1>
+<h1 align="center">js-reverse-automation-skill </h1>
 <p align="center">
   <code>前端JS逆向全流程自动化Skills</code> 
 </p>
 <div align="center">
 
 <p align="center">
-  <a href="https://github.com/Fausto-404/js-reverse-automation--skill/releases">
-    <img src="https://img.shields.io/github/v/release/Fausto-404/js-reverse-automation--skill?style=flat-square&label=release&color=blue&cacheSeconds=3600" alt="Release">
+  <a href="https://github.com/i-CNNN/js-reverse-automation-skill/releases">
+    <img src="https://img.shields.io/github/v/release/i-CNNN/js-reverse-automation-skill?style=flat-square&label=release&color=blue&cacheSeconds=3600" alt="Release">
   </a>
 
-  <a href="https://github.com/Fausto-404/js-reverse-automation--skill/stargazers">
-    <img src="https://img.shields.io/github/stars/Fausto-404/js-reverse-automation--skill?style=flat-square&label=stars&color=brightgreen&cacheSeconds=3600" alt="GitHub Stars">
+  <a href="https://github.com/i-CNNN/js-reverse-automation-skill/stargazers">
+    <img src="https://img.shields.io/github/stars/i-CNNN/js-reverse-automation-skill?style=flat-square&label=stars&color=brightgreen&cacheSeconds=3600" alt="GitHub Stars">
   </a>
 
-  <a href="https://github.com/Fausto-404/js-reverse-automation--skill/network/members">
-    <img src="https://img.shields.io/github/forks/Fausto-404/js-reverse-automation--skill?style=flat-square&label=forks&color=orange&cacheSeconds=3600" alt="GitHub Forks">
+  <a href="https://github.com/i-CNNN/js-reverse-automation-skill/network/members">
+    <img src="https://img.shields.io/github/forks/i-CNNN/js-reverse-automation-skill?style=flat-square&label=forks&color=orange&cacheSeconds=3600" alt="GitHub Forks">
   </a>
 
-  <a href="https://github.com/Fausto-404/js-reverse-automation--skill/releases">
-    <img src="https://img.shields.io/github/downloads/Fausto-404/js-reverse-automation--skill/total?style=flat-square&label=downloads&color=success&cacheSeconds=3600" alt="Downloads">
+  <a href="https://github.com/i-CNNN/js-reverse-automation-skill/releases">
+    <img src="https://img.shields.io/github/downloads/i-CNNN/js-reverse-automation-skill/total?style=flat-square&label=downloads&color=success&cacheSeconds=3600" alt="Downloads">
   </a>
 </p>
 
